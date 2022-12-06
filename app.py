@@ -25,7 +25,7 @@ def timeFunc(func):
         result = func(*args, **kwargs)
         t2 = time.time_ns()
         # '!r adds quotations'
-        print(f'{func.__name__!r} excuted in {t2 - t1}ns')
+        print(f'{func.__name__!r} executed in {t2 - t1}ns')
         return result
     return wrapFunc
 

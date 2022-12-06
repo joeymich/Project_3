@@ -47,7 +47,7 @@ class HashTable:
 
         self.size += 1
         loadFact = self.size/self.capacity
-        #print("current load factor: ", loadFact)
+        
         if loadFact > 0.75:
             self.reHash()
 

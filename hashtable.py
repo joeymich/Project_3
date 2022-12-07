@@ -99,15 +99,3 @@ class HashTable:
                 print("key:", curr.key, "value:", curr.val)
                 curr = curr.next
         print()
-
-
-if __name__ == '__main__':
-    h = HashTable(1)
-    import time
-    import datetime
-    x = datetime.datetime(2022, 12, 2).date()
-    h.insert(x, "hello")
-    x = datetime.date(2022, 12, 1)
-    h.insert(x, "duh")
-    # x = int(time.mktime(x.timetuple()))
-    h.printTable()
